@@ -1,0 +1,25 @@
+<dir class="container" style="margin:100px auto">
+    <div class="row">
+        <div class="colm">
+            <h4>agregar al blog</h4>
+            <form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data">
+                <div class="forms row">
+                    <input type="text" class="form-control" placeholder="Titulo" name="titulo">
+                </div>
+                <div class="forms row">
+                    <input type="text" class="form-control" placeholder="subtitulo" name="subtitulo">
+                </div>
+                <div class="forms row">
+                    <input type="text" class="form-control" placeholder="cuerpo" name="cuerpo">
+                </div>
+                <div class="forms row">
+                    <label>Imagen: <input type="file" name="imagen" id="imagen"/></label>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+            {{#if error}}
+                {{message}}
+            {{/if}}
+        </div>
+    </div>
+</dir>

@@ -1,0 +1,14 @@
+  <div class="forms">
+<form action="/admin/login" method="post">
+
+    <label for="exampleFormControlInput1" class="form-label"></label>
+    <input type="text" class="form-control" id="Inputuser" placeholder="Usuario" name="usuario">
+
+
+  <button type="submit" class="btn btn-primary">Ingresar</button>
+</form>
+  </div>
+
+{{#if error}}
+<p> Usuario incorrecto </p>
+{{/if}}
